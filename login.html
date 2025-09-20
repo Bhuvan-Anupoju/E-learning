@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #d6f3eb; /* Light mint background */
+      }
+
+      .container {
+        background: #20b486;
+        padding: 30px 20px;
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      .form-title {
+        font-size: 1.1rem;
+        text-align: left;
+        margin-bottom: 15px;
+      }
+
+      .input-box {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .input-box input {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        font-size: 1rem;
+      }
+
+      .options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+      }
+
+      .options input {
+        margin-right: 5px;
+      }
+
+      .login-btn {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        background: #1f3c88;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .login-btn:hover {
+        background: #162d66;
+      }
+
+      .or {
+        margin: 20px 0;
+        font-size: 0.9rem;
+        color: #555;
+      }
+
+      .google-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 12px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        background: #fff;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .google-btn img {
+        width: 20px;
+        margin-right: 10px;
+      }
+
+      .google-btn:hover {
+        background: #f1f1f1;
+      }
+
+      .signup {
+        margin-top: 20px;
+        font-size: 0.9rem;
+      }
+
+      .signup a {
+        color: #1f3c88;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      @media (max-width: 500px) {
+        .container {
+          padding: 20px 15px;
+        }
+        .login-btn,
+        .google-btn {
+          font-size: 0.9rem;
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Welcome back!</h2>
+      <p class="form-title">Log In to your account</p>
+
+      <div class="input-box">
+        <input type="text" placeholder="Enter your name" required />
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Enter your password" required />
+      </div>
+
+      <div class="options">
+        <label><input type="checkbox" /> Remember Me</label>
+        <a href="#">Forgotten password?</a>
+      </div>
+
+      <button class="login-btn">Log In</button>
+
+      <p class="or">OR</p>
+
+      <button class="google-btn">
+        <img
+          src="https://www.svgrepo.com/show/355037/google.svg"
+          alt="Google Logo"
+        />
+        Log in with your Google account
+      </button>
+
+      <p class="signup">Don’t have an account? <a href="#">Sign Up</a></p>
+    </div>
+  </body>
+</html>
